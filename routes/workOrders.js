@@ -14,4 +14,7 @@ router.get('/location/:location', (req,res,next) => {
 router.get('/id/:id', (req,res,next) => {
     workOrders.oneWorkOrderById(req,res)
 })
+router.get('/count/:id', (req,res,next) => {
+    workOrders.getWorkOrderCount(req,res)
+})
 module.exports = router

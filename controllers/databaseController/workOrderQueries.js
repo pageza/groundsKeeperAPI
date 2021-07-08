@@ -25,5 +25,11 @@ module.exports = {
         let query = workOrderQuery.slice(0)
         query.splice(4, 0, 'AND work_orders.id = "' + id + '"')
         return query.join("\n")
+    },
+    workOrderCount: (id) => {
+        let query = ['SELECT COUNT(description)',
+                    'FROM work_orders',
+                    'WHERE work_orders.location_id = '+ id +';']
+        return query.join("\n")
     }
 }
