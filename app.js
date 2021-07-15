@@ -32,6 +32,6 @@ app.use('/api/personnel', personnelRouter);
 app.use('/api/routes', workRoutesRouter);
 app.use('/api/workorders', workOrdersRouter);
 app.use('/api/schools', schoolsRouter);
-
+// how is this still here
 app.listen(6789)
 module.exports = app;
