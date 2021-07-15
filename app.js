@@ -32,9 +32,9 @@ app.use('/api/personnel', personnelRouter);
 app.use('/api/routes', workRoutesRouter);
 app.use('/api/workorders', workOrdersRouter);
 app.use('/api/schools', schoolsRouter);
-app.use((req,res) => {
-    res.sendFile(path.join(__dirname, 'ngGroundsKeeper', 'index.html'))
-})
+// app.use((req,res) => {
+//     res.sendFile(path.join(__dirname, 'ngGroundsKeeper', 'index.html'))
+// })
 
 app.listen(6789)
 module.exports = app;

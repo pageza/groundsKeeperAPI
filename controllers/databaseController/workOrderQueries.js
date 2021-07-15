@@ -1,5 +1,5 @@
 const workOrderQuery = [
-    "SELECT personnel.first_name, personnel.last_name, locations.name, work_orders.description, work_orders.date_requested",
+    "SELECT personnel.first_name, personnel.last_name, locations.name, work_orders.id, work_orders.description, work_orders.date_requested",
     "FROM work_orders",
     "INNER JOIN personnel",
     "ON work_orders.personnel_id = personnel.id",
